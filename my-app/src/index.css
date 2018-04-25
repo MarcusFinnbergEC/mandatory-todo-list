@@ -1,0 +1,124 @@
+body {
+  padding: 50px;
+  background-image: url("./images/palm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.todoListMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+form {
+  height: 50px;
+
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 100%;
+  max-width: 100%
+ }
+.taskList{
+  width: 35%;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  background-color: rgba(238, 232, 170, 0.8);
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  margin-bottom: 15px;
+}
+ul {
+ width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  list-style-type: none;
+  text-decoration: none;
+  padding-top:5px;
+  padding-left: 0;
+  margin: 0;
+}
+li {
+  width: 100%;
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  border-bottom: 2px solid whitesmoke;
+  color: saddlebrown;
+}
+
+li:last-of-type{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.listItemInfo {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+}
+.listItemButton {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 4px;
+}
+button, input {
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+button{
+  color: whitesmoke;
+  background-color: yellowgreen;
+}
+input[placeholder="Enter task"]{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+button[type="submit"]{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+input[type="checkbox"]{
+  width: 18px;
+  height:18px;
+}
+.done{
+  text-decoration: line-through;
+  text-decoration-color: whitesmoke;
+  text-decoration-style: wavy;
+}
